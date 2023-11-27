@@ -13,7 +13,7 @@ func main() {
 
 	port := ":8080"
 	if err := http.ListenAndServe(port, nil); err != nil {
-		fmt.Printf("Error ocurred trying to run the web service: %s", err)
+		fmt.Printf("Error ocurred trying to run the web service: %s\n", err)
 		log.Fatal(err)
 	}
 
